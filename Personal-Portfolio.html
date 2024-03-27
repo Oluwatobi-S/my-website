@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/525c4f019e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack Web Developer</p>
+            <h1>Hi, I'm<span> Oluwatobi</span><br/>Sobamiwa From Kent</h1>
+        </div>
+    </div>
+</div> 
+<!-- ------about------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/web-designer-skills-1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                I am an aspiring backend/full-stack self taught website developer. I am also a recent university graduate from the University of Salford in Manchester, with a high level of experience in the science field.
+                </p>
+
+                <div class="tab-titles">
+                    <p class= "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class= "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class= "tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Backend/Full Stack Web Developer</span><br/>Designing Web/App Interfaces (Frontend/Backend Programming Languages)</li>
+                        <li><span>Web Development</span><br/>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br/>Designing Website API</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Current</span><br/>Web Development Courses (with Certificates) - Udemy, Codecademy, CareerFoundary</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------services------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                Discover the services I offer as a self-taught full stack developer. From web development to database management, explore how I can bring your digital projects and ideas to life with expertise and passion.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-webflow"></i>
+                <h2>Web Development</h2>
+                <p>
+                Explore my range of web development services as a self-taught full stack developer. From responsive design to dynamic functionality, I specialise in crafting tailored solutions to meet your digital needs.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------portfolio------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Personal-Portfolio-Image-1.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Project</h3>
+                    <p>
+                    My first website, a simple personal portfolio, showcasing sleek and modern design elements comined with navigation, shaping an engaging user experience.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Personal-Portfolio-Image-2.png">
+                <div class="layer">
+                    <h3>Responsive Web Design Project</h3>
+                    <p>
+                    My second website, a web page discussing about repsonsive web design and its importance in today's world of tech. A fluid and adaptable layout whuch seamlessly adjusts to variuos screen sizes and devices for an optimal viewing experience.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Personal-Portfolio-Image-3.png">
+                <div class="layer">
+                    <h3>Coffee Website Project</h3>
+                    <p>
+                    My third website, a website all about coffee! An inviting online space where coffee enthusiasts can explore an array of rich blends, brweing methods and so much more.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------contact------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>
+                <i class="fa-solid fa-paper-plane"></i> tobisobamiwa@aol.com
+                </p>
+                <p>
+                <i class="fa-solid fa-square-phone"></i> 07479 564696
+                </p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Oluwatobi Sobamiwa CV.pdf" download class="btn btn2">Download CV/Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6"0 placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+        Copyright © 2024 Oluwatobi <i class="fa-solid fa-heart"></i>. All Rights Reserved
+        </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }   
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwhFnp_EGy7BijjXYZ7gxUUrkJLmX-BEUTdlblHwDHdZuhnnv_ZDg-lkeIk1KbKpfNTlA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
